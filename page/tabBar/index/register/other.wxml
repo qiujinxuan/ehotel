@@ -1,0 +1,34 @@
+<view class="header" >
+    <image class="w380" src="/image/index/logo.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+</view>
+<view class="inputlist jub_jub_center" hover-class="none" hover-stop-propagation="false">
+    <input type="text" placeholder="请输入手机号" class="inputArea" />
+    <view class="code">
+        获取验证码
+    </view>
+</view>
+<view class="inputlist jub_jub_center" hover-class="none" hover-stop-propagation="false">
+    <input type="text" placeholder="请输入验证码" class="inputArea" />
+</view>
+<view class="inputlist jub_jub_center" hover-class="none" hover-stop-propagation="false">
+    <input type="text" placeholder="请输入姓名" class="inputArea" />
+</view>
+<view class="inputlist jub_jub_center mb80" hover-class="none" hover-stop-propagation="false">
+    <input type="text" placeholder="请输入身份证号" class="inputArea" />
+</view>
+<button class="login" bindtap="showInfo">确认继续</button>
+
+<view class="info_back juc_colum_b" style="height:{{height+'px'}}" bindtap="showInfo" wx:if="{{infoshow}}">
+
+</view>
+<view class="info_message" wx:if="{{infoshow}}">
+    <view class="info_bottom" bindtap="userInfo" >
+        我知道了
+    </view>
+    <view class="info_title" >
+        注册须知
+    </view>
+    <view class="info_content" hover-class="none" hover-stop-propagation="false">
+        欢迎使用朝月客房自助平台，根据国家法律法规，请按照流程，在本平台登记您的真实个人信息，我们将通过公安部的身份认证与您的人脸识别核实信息，通过认证并支付后，方可用小程序按钮打开客房门锁。 朝月智能科技，我们让科技更懂你！
+    </view>
+</view>

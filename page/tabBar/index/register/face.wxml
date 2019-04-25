@@ -1,0 +1,19 @@
+<view class="header" hover-class="none" hover-stop-propagation="false">
+    <view class="header_camer" >
+        <camera  device-position="front"   flash="off"   binderror="error"  style="width:100%;height:100%"></camera>
+    </view>  
+</view>
+<view class="middle" hover-class="none" hover-stop-propagation="false">
+    <view class="" >
+        1:请确认由本人亲自操作;
+    </view>
+    <view class="" >
+       2:请将脸置于提示框内，并按提示完成动作
+    </view>
+</view>
+<view class="middle_img jub_jub_center">
+    <image class="w128h128" src="/image/index/img_02@2x.png" />
+    <image class="w128h128" src="/image/index/img_03@2x.png" />  
+    <image class="w128h128" src="/image/index/img_04@2x.png" />  
+</view>
+<button class="login" bindtap="faceSuccess">开始检测</button>

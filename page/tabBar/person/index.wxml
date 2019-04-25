@@ -1,0 +1,76 @@
+<view class="header jub_jub_center" wx:if="{{infoShow}}" >
+    <image class="w40h40 ml30" src="/image/my/info-circle@2x.png"/>
+    <view class="header_text" >
+        您的客房已到期，点击“续住”缴费后继续使用
+    </view>
+    <image class="w40h40 mr30" src="/image/my/close.png" bindtap="closeInfo"/>
+</view>
+<view class="header_bg juc_colum">
+    <image class="header_bg_img" src="/image/my/my_bg.png">
+        
+    </image>
+    <image class="w144h144" src="/image/my/over.png" />
+</view>
+<view class="middle">
+    <view class="contanier" >
+        <view class="pt60 ft60 " >
+            A6101
+        </view>
+        <view class="ft28 color_99 pb70" >
+            房号
+        </view>
+        <view class="contanier_list jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/building.png"/>  
+                <view class="ft28 color_66" >
+                    酒店
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+                长沙房时代LOFT公寓
+            </view>
+        </view>
+        <view class="contanier_list jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/lock.png"/>  
+                <view class="ft28 color_66" >
+                    房间密码
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+                15207316789
+            </view>
+        </view>
+        <view class="contanier_list jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/history.png"/>  
+                <view class="ft28 color_66" >
+                    有效期
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+               2019-05-20 15:30:00
+            </view>
+        </view>
+        <!-- 侧边栏目 -->
+        <view class="right_phone flex_align" >
+            <image class="phone mr10" src="/image/my/dianhua.png" />
+            <view class="ft28 color_w">
+                咨询
+            </view>
+        </view>
+    </view>
+</view>
+    <view class="pt70"  wx:if="{{!isEnter}}">
+        <image class="w384h144" src="/image/my/unlock.png" />
+        <view class=" bottom_info color_99" >
+            <text class="color_66" >温馨提示：</text>找到对应的房号，点击“开锁按钮”一键开锁。若点击多次仍无法开锁，请在房门上手动输入房间密码进行开锁
+        </view>
+    </view>
+    
+    <view class="Enter juc_colum" wx:if="{{isEnter}}">
+        <view class="flex_align">
+            <image class="w300h120 mr60" src="/image/my/continue.png" />  
+            <image class="w300h120 " src="/image/my/over.png" />
+         </view>
+    </view>

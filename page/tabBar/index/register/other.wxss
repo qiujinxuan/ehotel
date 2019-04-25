@@ -1,0 +1,83 @@
+.header{
+    padding: 62rpx 0 130rpx;
+    text-align: center
+}
+.w380{
+    width: 380rpx;
+}
+.inputlist{
+    width: 598rpx;
+    height: 100rpx;
+    border-bottom: 2rpx solid #eee;
+    margin: 0 auto;
+}
+.inputArea{
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 34rpx;
+}
+.code{
+    line-height: 100rpx;
+    color: #FFAA25;
+    font-size: 28rpx;
+}
+.mb80{
+    margin-bottom: 80rpx;
+}
+.login{
+    width:590rpx;
+    height:94rpx;
+    background:rgba(22,184,123,1);
+    border-radius:47rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 94rpx;
+    font-size: 36rpx;
+}
+.info_back{
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 30
+}
+.info_message{
+    width:560rpx;
+    height:620rpx;
+    background:rgba(255,255,255,1);
+    border-radius:8rpx;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 40;
+    margin-left: -280rpx;
+    margin-top: -310rpx;
+}
+.info_bottom{
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-top:1rpx solid #E5E5E5;
+    color: #16B87B;
+    font-size: 32rpx;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.info_content{
+    color:#666666;
+    font-size: 28rpx;
+    text-align: center;
+    width:480rpx ;
+    margin: 0 auto;
+}
+.info_title{
+    font-size: 36rpx;
+    color: #333;
+    padding: 56rpx 0 36rpx;
+    font-size: 36rpx;
+    text-align: center;
+    font-weight: bold
+}

@@ -1,0 +1,46 @@
+function addOne(num){
+  num =num + 1
+  return num
+}
+
+function hideCardinfo(str){
+  str = str.toString()
+  var array = str.split('')
+  for (var i=0;i<array.length-1;i++) {
+    if (i>=6&&i<=13) {
+      array[i]='*'
+    }
+  }
+  str =array.join('')
+  return str
+}
+function formateDate(str) {
+  var str1 = ''  
+  var dateArray = str.split('');
+  dateArray.splice(4,0,'-')
+  dateArray.splice(7,0,'-')
+  dateArray.splice(10,0,' ')
+  dateArray.splice(13,0,':')
+  dateArray.splice(16,0,':')
+  str1=dateArray.join('')
+  return str1
+}
+function fomatereduce(str){
+  var reduce = str 
+  console.log(reduce)
+  reduce=Math.abs(reduce)
+  return reduce
+}
+function formateNumber(str){
+  var formateNumber= str
+  return formateNumber.toFixed(2)
+}
+
+
+module.exports = {
+  addOne: addOne,
+  hideCardinfo:hideCardinfo,
+  formateDate:formateDate,
+  fomatereduce:fomatereduce,
+  formateNumber: formateNumber
+}

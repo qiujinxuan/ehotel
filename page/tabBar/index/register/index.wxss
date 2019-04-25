@@ -1,0 +1,19 @@
+.w_100{
+    width: 100%;
+}
+.login{
+    width:590rpx;
+    height:94rpx;
+    background:rgba(22,184,123,1);
+    border-radius:47rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 94rpx;
+    font-size: 36rpx;
+}
+.otherLogin{
+    padding: 16rpx;
+    color: #999;
+    font-size: 28rpx;
+    text-align: center
+}
