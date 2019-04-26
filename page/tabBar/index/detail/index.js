@@ -5,12 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    header_type:'time'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  headerOp(e){
+    const type = e.currentTarget.dataset.type
+    if(type !=this.data.header_type) {
+      this.setData({
+        header_type:type
+      })
+    }
+    
+  },
   onLoad: function (options) {
 
   },

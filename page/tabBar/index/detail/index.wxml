@@ -1,13 +1,13 @@
 <view class="header_blanck"></view>
 <view class="header flex_align" >
-    <view class="header_item act">
+    <view class="header_item  {{header_type=='time'?'act':''}}" bindtap="headerOp" data-type="time">
         钟点房
     </view>
-    <view class="header_item">
+    <view class="header_item {{header_type=='day'?'act':''}}" bindtap="headerOp" data-type="day">
        日房
     </view>
 </view>
-<view class="select_plate jub_jub_center">
+<view class="select_plate jub_jub_center" wx:if="{{header_type=='day'}}">
     <view class="select_item juc_colum_b act_bg">
         <view class="day mb10 act_blanck">
             1天
@@ -36,17 +36,51 @@
         </view>
     </view>
 </view>
-<view class="select_info" >
-    <view class="flex_align mb20" >
-        <image class="w28h28 mr20" src="/image/my/icon_calculator@2x.png" >
-            
-        </image>
-        <view class="color_33 ft28">
-            日房计算规则
+<view class="select_plate jub_jub_center" wx:if="{{header_type=='time'}}">
+    <view class="select_item juc_colum_b act_bg">
+        <view class="day mb10 act_blanck">
+            3小时
+        </view>
+        <view class="money">
+            <text class=" act_blanck">￥</text>
+            <text class="ft60 act_blanck" >78</text>
         </view>
     </view>
-    <view class="pl48 ft28 color_99" >
-        宾馆的钟点房是给客人提供一个舒适的环境做短暂休息的。所以一般是开房不到半天又在4小时以内的，价格不等，而在时间内不用再交钱了 ，如超过时间会增加，服务人员会通知您是否续费，这比较灵活
+    <view class="select_item juc_colum_b">
+        <view class="day mb10">
+            4小时
+        </view>
+        <view class="money">
+            <text class="">￥</text>
+            <text class="ft60" >78</text>
+        </view>
+    </view>
+    <view class="select_item juc_colum_b">
+        <view class="day mb10">
+            6小时
+        </view>
+        <view class="money">
+            <text class="">￥</text>
+            <text class="ft60" >78</text>
+        </view>
+    </view>
+</view>
+<view class="select_info" >
+    <view class="flex_align mb20" >
+        <image class="w28h28 mr20" src="/image/my/icon_calculator@2x.png" > 
+        </image>
+        <view class="color_33 ft28" wx:if="{{header_type=='day'}}">
+            日房计算规则
+        </view>
+        <view class="color_33 ft28" wx:if="{{header_type=='time'}}">
+            钟点房计算规则
+        </view>
+    </view>
+    <view class="pl48 ft28 color_99"  wx:if="{{header_type=='day'}}">
+        日租房有1天、2天、3天、三个时长选择，确认付款后，即可在相应时间段内不限次数的重复开锁。日住房的营业时间为：0:00-3:00和10:00-24:00两个时间段。在0:00-2:00入住的日住房为付款开始至当日上午12点为一天，在10:00-24:00入住的日住房为付款开始至次日上午12点为一天。其它时间段的开房，请使用钟点房的开房方式。本系统不支持退款，方案一旦选择，不能调整更改，如有其它问题，请联系酒店客服。
+    </view>
+    <view class="pl48 ft28 color_99"  wx:if="{{header_type=='time'}}">
+        钟点房有3小时、4小时、6小时三个时长选择，确认付款后，即可在相应时间段内不限次数的重复开锁。3小时和4小时的钟点房的营业时间为：5:00-17:00，6小时的钟点房营业时间为3:00-15:00，钟点房的时间从付款后开始计时。其它时间段的开房，请使用日租房的开房方式。本系统不支持退款，方案一旦选择，不能调整更改，如有其它问题，请联系酒店方。
     </view>
 </view>
 <button class="bottom_btn" bindtap="navigateTo">立即支付78元</button>

@@ -9,10 +9,18 @@
     <image class="header_bg_img" src="/image/my/my_bg.png">
         
     </image>
-    <image class="w144h144" src="/image/my/over.png" />
+    <view class="header_content juc_colum_b" >
+        <image class="w144h144 mt-60" src="/image/my/over.png" wx:if="{{!isEnter}}" />
+        <view class="juc_colum_b mt-60" wx:if="{{isEnter}}">
+            <image class="w80h80" src="/image/my/daoqitixing@2x.png"/>
+             <view class="title_text" >
+                 客官，您的客房已到期~
+             </view>
+        </view>
+    </view>
 </view>
 <view class="middle">
-    <view class="contanier" >
+    <view class="contanier {{!isEnter?'h558':'h458'}}" >
         <view class="pt60 ft60 " >
             A6101
         </view>
@@ -30,7 +38,7 @@
                 长沙房时代LOFT公寓
             </view>
         </view>
-        <view class="contanier_list jub_jub_center" >
+        <view class="contanier_list jub_jub_center" wx:if="{{!isEnter}}" >
             <view class="flex_align" >
                 <image class="w36h36 mr15" src="/image/my/lock.png"/>  
                 <view class="ft28 color_66" >
@@ -41,7 +49,7 @@
                 15207316789
             </view>
         </view>
-        <view class="contanier_list jub_jub_center" >
+        <view class="contanier_list no_border jub_jub_center" >
             <view class="flex_align" >
                 <image class="w36h36 mr15" src="/image/my/history.png"/>  
                 <view class="ft28 color_66" >
@@ -61,16 +69,30 @@
         </view>
     </view>
 </view>
-    <view class="pt70"  wx:if="{{!isEnter}}">
-        <image class="w384h144" src="/image/my/unlock.png" />
+    <view class="pt60  juc_colum"  wx:if="{{!isEnter}}">
+        <view class="flex_align pb60" >
+             <view>
+                 <image class="w88h88 mb15" src="/image/my/quit.png" />   
+                 <view class="ft28 color_33">退房</view> 
+             </view>
+            <image class="w204h204 mb30" src="/image/my/unlock.png" />    
+            <view>
+                 <image class="w88h88 mb15" src="/image/my/agin.png" />   
+                 <view class="ft28 color_33">续住</view> 
+             </view>
+        </view>
+        
         <view class=" bottom_info color_99" >
             <text class="color_66" >温馨提示：</text>找到对应的房号，点击“开锁按钮”一键开锁。若点击多次仍无法开锁，请在房门上手动输入房间密码进行开锁
         </view>
     </view>
     
     <view class="Enter juc_colum" wx:if="{{isEnter}}">
-        <view class="flex_align">
+        <view class="flex_align mb30">
             <image class="w300h120 mr60" src="/image/my/continue.png" />  
             <image class="w300h120 " src="/image/my/over.png" />
          </view>
+         <view class=" bottom_info color_99" >
+            <text class="color_66" >温馨提示：</text>找到对应的房号，点击“开锁按钮”一键开锁。若点击多次仍无法开锁，请在房门上手动输入房间密码进行开锁
+        </view>
     </view>

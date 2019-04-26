@@ -6,7 +6,7 @@ Page({
    */
   data: {
     infoShow:true, //头部信息是否显示
-    isEnter:true  //是否已经入住
+    isEnter:false  //是否已经入住
   },
 
   /**

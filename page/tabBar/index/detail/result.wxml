@@ -8,7 +8,7 @@
     <view class="content" >
         返回首页，在“我的”页面可以查看订单信息
     </view>
-    <button class='btn_bottom'>返回首页</button>
+    <button class='btn_bottom'>返回</button>
 </block>
 <block wx:if="{{!result_success}}">
     <view class="header" >
