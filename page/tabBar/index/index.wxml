@@ -72,7 +72,7 @@
             <cover-view class="controls">
                 <cover-image class="loacation" src="/image/index/fenzu2.png" />
             </cover-view>
-            <cover-view class=" right_control" bindtap="navigate">
+            <cover-view class=" right_control" bindtap="navigate" hover-class="bottomact">
                 <cover-image class="loacation" src="/image/index/fenzu4.png" />
             </cover-view>
             <cover-view class=" middlebutton"  bindtap="navigateScen">

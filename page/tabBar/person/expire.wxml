@@ -1,13 +1,17 @@
 <view class="header_bg juc_colum">
     <image class="header_bg_img" src="/image/my/my_bg.png">
-        
     </image>
     <view class="header_content juc_colum_b" >
-        <image class="w144h144 mt-60" src="/image/index/icon_failure@2x.png" />
+        <view class="juc_colum_b mt-60">
+            <image class="w80h80" src="/image/my/daoqitixing@2x.png"/>
+             <view class="title_text" >
+                 客官，您的客房已到期~
+             </view>
+        </view>
     </view>
 </view>
 <view class="middle">
-    <view class="contanier h558" >
+    <view class="contanier h458">
         <view class="pt60 ft60 " >
             A6101
         </view>
@@ -23,17 +27,6 @@
             </view>
             <view class="ft28 color_33" >
                 长沙房时代LOFT公寓
-            </view>
-        </view>
-        <view class="contanier_list jub_jub_center" >
-            <view class="flex_align" >
-                <image class="w36h36 mr15" src="/image/my/lock.png"/>  
-                <view class="ft28 color_66" >
-                    房间密码
-                </view>
-            </view>
-            <view class="ft28 color_33" >
-                15207316789
             </view>
         </view>
         <view class="contanier_list no_border jub_jub_center" >
@@ -56,33 +49,31 @@
         </view>
     </view>
 </view>
-    <view class="pt40  juc_colum">
-        <view class="flex_align pb60" >
-             <view>
-                <view class="w88h88 bgred mb15 juc_colum_b">
-                    <image class="w48h48" src="/image/my/door2.png" />   
-                </view>
-                <view class="ft28 color_33 w_88">退房</view> 
-             </view>
-           
-            <view class="w204h204 juc_colum_b" >
-                <view class=" juc_colum_b">
-                    <image class="w48h48 mb10" src="/image/my/key.png" />
-                    <view class="ft32 color_w">
-                        点击开锁
+    <view class="Enter juc_colum" >
+        <view class="flex_align mb30">
+            <view class="bottom_btn mr60 juc_colum_b bgblue" hover-class="bottomact" >
+                <view class="flex_align" >
+                    <image class="w40h40 mr15" src="/image/my/door.png" >
+                        
+                    </image>
+                    <view class="ft36 color_w" >
+                        新开
+                    </view>
+                </view>    
+            </view>
+            <view class="bottom_btn juc_colum_b bggreen" hover-class="bottomact" >
+                <view class="flex_align" >
+                    <image class="w40h40 mr15" src="/image/my/agin.png" >
+                        
+                    </image>
+                    <view class="ft36 color_w" >
+                        续住
                     </view>
                 </view>
+                    
             </view>
-            <view>
-                 <view class="w88h88 bgblue mb15 juc_colum_b">
-                   <image class="w48h48" src="/image/my/agin.png" />   
-                 </view>
-                 <view class="ft28 color_33 w_88">续住</view> 
-             </view>
-        </view>
-        
-        <view class=" bottom_info color_99" >
+         </view>
+         <view class=" bottom_info color_99" >
             <text class="color_66" >温馨提示：</text>找到对应的房号，点击“开锁按钮”一键开锁。若点击多次仍无法开锁，请在房门上手动输入房间密码进行开锁
         </view>
     </view>
-    

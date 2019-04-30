@@ -7,4 +7,4 @@
 <view class="success_content">
     朝月智能科技，我们让科技更懂您
 </view>
-<button class="login" bindtap="userInfo">返回首页</button>
+<button hover-class="bottomact"  class="login" bindtap="userInfo">返回首页</button>

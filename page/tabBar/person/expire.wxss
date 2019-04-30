@@ -149,7 +149,6 @@
 .w88h88{
     width: 88rpx;
     height: 88rpx;
-    border-radius: 50%;
 }
 .header_content{
     width: 100%;
@@ -167,27 +166,18 @@
     font-size: 28rpx;
     color: #fff;
 }
-.w48h48{
-    width: 48rpx;
-    height: 48rpx;
+.bottom_btn{
+    width: 280rpx;
+    height: 112rpx;
+    border-radius: 56rpx;
 }
-.bgred{
-    background: #F85A5A;
+.w40h40{
+    width: 40rpx;
+    height: 40rpx;
 }
 .bgblue{
     background: #55ADFF;
 }
-.w_88{
-    width: 88rpx;
-    text-align: center
-}
-.w204h204{
-    width:180rpx;
-    height:180rpx;
+.bggreen{
     background:rgba(22,184,123,1);
-    box-shadow:0px 4rpx 12rpx 0px rgba(3, 3, 3, 0.36);
-    border-radius: 50%;
-}
-.color_w{
-    color: #fff;
 }

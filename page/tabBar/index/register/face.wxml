@@ -1,6 +1,10 @@
 <view class="header" hover-class="none" hover-stop-propagation="false">
     <view class="header_camer" >
-        <camera  device-position="front"   flash="off"   binderror="error"  style="width:100%;height:100%"></camera>
+        <camera  device-position="front"   flash="off"   binderror="error"  style="width:100%;height:100%;position:realative">
+            <cover-view class="coverimg"  >
+                <cover-image class="coverimg" src="/image/index/man.png" />
+            </cover-view> 
+        </camera>
     </view>  
 </view>
 <view class="middle" hover-class="none" hover-stop-propagation="false">
@@ -16,4 +20,4 @@
     <image class="w128h128" src="/image/index/img_03@2x.png" />  
     <image class="w128h128" src="/image/index/img_04@2x.png" />  
 </view>
-<button class="login" bindtap="faceSuccess">开始检测</button>
+<button hover-class="bottomact"  class="login" bindtap="faceSuccess">开始检测</button>

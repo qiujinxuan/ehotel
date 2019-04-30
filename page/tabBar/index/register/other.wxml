@@ -16,7 +16,7 @@
 <view class="inputlist jub_jub_center mb80" hover-class="none" hover-stop-propagation="false">
     <input type="text" placeholder="请输入身份证号" class="inputArea" />
 </view>
-<button class="login" bindtap="showInfo">确认继续</button>
+<button hover-class="bottomact"  class="login" bindtap="showInfo">确认继续</button>
 
 <view class="info_back juc_colum_b" style="height:{{height+'px'}}" bindtap="showInfo" wx:if="{{infoshow}}">
 

@@ -7,7 +7,8 @@
     "page/tabBar/index/register/success",
     "page/tabBar/index/detail/index",
     "page/tabBar/index/detail/result",
-    "page/tabBar/person/index"
+    "page/tabBar/person/index",
+    "page/tabBar/person/expire"
   ],
   "workers": "workers",
   "window": {
@@ -24,5 +25,6 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

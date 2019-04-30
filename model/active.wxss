@@ -1,3 +1,6 @@
 .color_aa{
 	color:#aaa;
 }
+.bottomact{
+	opacity: .7;
+}
