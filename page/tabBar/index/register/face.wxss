@@ -7,15 +7,14 @@
 }
 .header{
     width: 590rpx;
-    height: 480rpx;
     border-bottom: 2rpx solid #eee;
     margin:0 auto;
-    padding: 80rpx 0 ;
+    padding: 30rpx 0 ;
     box-sizing: border-box;
 }
 .header_camer{
     width: 480rpx; 
-    height: 360rpx;
+    height: 416rpx;
     margin: 0 auto;
 }
 .middle{

@@ -35,9 +35,9 @@ Page({
     })
    setTimeout(() => {
       // this.setData({loginSuccess:true})  //模拟登陆成功
-      //  wx.reLaunch({
-      //   url: '/page/tabBar/index/register/index',
-      // });                                   //模拟登陆不成功
+       wx.reLaunch({
+        url: '/page/tabBar/index/register/index',
+      });                                   //模拟登陆不成功
    }, 1000);
   },
 
