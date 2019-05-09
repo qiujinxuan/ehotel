@@ -1,0 +1,14 @@
+<block>
+    <view class="header" >
+        <image class="w192h192" src="/image/index/logo_solo_pig.png" />     
+    </view>
+    <view class="ttitle mb10" >
+        注册成功
+    </view>
+    <view class="content" >
+        欢迎您使用房小猪
+    </view>
+    <button hover-class="bottomact"  class='btn_bottom' bindtap="redirectToHome">返回首页</button>
+</block>
+
+

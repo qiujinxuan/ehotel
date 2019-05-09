@@ -1,0 +1,46 @@
+<view class='header'>
+
+    <view class='title'></view>
+  </view>
+<view class="container">
+  <text class="hint">管理员操作界面</text>
+  <view class="form-wrap">
+    <view class="flex-wrap input-wrap">
+      <input placeholder='用户名' bindinput="inputUserId" class="account-info-input" />
+    </view>
+    <view class="flex-wrap input-wrap">
+      <input password="true" placeholder='密码' bindinput="inputUserPwd" id="password" class="account-info-input" />
+    </view>
+
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />
+        {{item.value}}
+      </label>
+    </radio-group>
+
+  </view>
+  <text wx:if="{{error}}" class="error">{{error}}</text>
+  <text class="hint">请输入用户名和密码登录管理员界面</text>
+  <button class="submit" type="primary" bindtap="submitLogin">登录</button>
+</view>
+
+
+
+<!--
+
+ <view class='li'>
+    <view class='label'>用户名</view>
+    <input  placeholder='用户名' bindinput='inputUserId'></input>
+    <view class='label'>密码</view>
+    <input  placeholder='密码' bindinput='inputUserPwd'></input>
+    <view class='label'>用户类型</view>
+    <picker mode="selector" value="{{userType}}" range="{{userTypes}}" bindchange="selectUserType">
+          <view class='xl'> 
+      <view class="picker"> {{userTypes[userType]}}</view>
+      </view>
+    </picker>
+    <view>选择</view>
+    <button class='btn620' bindtap='submitLogin'>登录</button>
+</view>
+-->

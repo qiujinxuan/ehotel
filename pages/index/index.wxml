@@ -1,0 +1,84 @@
+<!-- 登陆是否成功 -->
+<block>
+  <view class="contanir" style="height:{{height+'px'}}">
+      <view class="header"  wx:if="{{SHOW_BOX==1}}" bindtouchstart="touchstart" bindtouchend="touchend">
+          <view class="header_info flex_align" >
+            <view class="info_left" >
+              <image class="w218h152" src="{{HOTEL_IMG}}" >
+              </image>
+            </view>
+            <view class="info_right h_100 juv_colum" >
+                <view class="ft34">
+                  {{HOTEL_NAME}}
+                </view>
+                <view class="info_right_middle jub_jub_center" >
+                  <view class="flex_align">
+                    <view class="mr15 label_one" >
+                      星级公寓
+                    </view>
+                    <view class="label_two" >
+                      情侣特惠
+                    </view>
+                  </view>
+                  <view class="right_color">
+                    <text>￥</text>
+                    <text class="ft48">{{HOTEL_PRICE}}</text>
+                    <text>起</text>
+                  </view>
+                </view>
+                <view class="color_99 ft28" >
+                  特色：大床、有窗；
+                </view>
+            </view>
+          </view>
+          <view class="header_bottm" >
+            <view class="header_bottom_top jub_jub_center ">
+               <view class="flex_align ">
+                  <image class="w32h32 mr20" src="/image/index/grey_location.png"lazy-load="false" binderror="" bindload="">
+                    
+                  </image>
+                  <view class="ft28 color_66" >
+                    {{HOTEL_ADDRESS}}
+                  </view>
+               </view>
+               <image class="mr30 w40h40" src="/image/index/index_location.png" bindtap='navigateTo'>
+                 
+               </image>
+            </view>
+            <view class="header_bottom_bottom jub_jub_center">
+              <view class="flex_align h_100">
+                  <image class="w32h32 mr20" src="/image/index/@2x.png" lazy-load="false" binderror="" bindload="" />
+                  <view class="ft28 color_66">
+                    {{HOTEL_PHONE}}
+                  </view>
+               </view>
+               <image class="mr30 w40h40" src="/image/index/index_phone.png" bindtap='callService'/>
+            </view>
+          </view>
+      </view>
+      <view class="map_box {{SHOW_BOX==1?'':'no_info'}}">
+        <map
+          id="map"
+          longitude="{{currentlongitude}}"
+          latitude="{{currentlatitude}}"
+          scale="14"
+          controls="{{controls}}"
+          bindcontroltap="controltap"
+          markers="{{markers}}"
+          bindmarkertap="markertap"
+          bindregionchange="regionchange"
+          show-location
+          style="width: 100%; height: 100%;">
+            <cover-view class="controls" bindtap="myLocation" hover-class="bottomact">
+              <cover-image class="loacation"  src="/image/index/fenzu2.png" />
+            </cover-view>
+            <cover-view style="display:none" class=" right_control" bindtap="redirectToMy" hover-class="bottomact">
+              <cover-image class="loacation" src="/image/index/fenzu4.png" />
+            </cover-view>
+            <cover-view class=" middlebutton"  bindtap="scanQROpenDoor" hover-class="bottomact">
+              <cover-image class="middle_scan" src="/image/index/saoma@2x.png" />
+            </cover-view>
+        </map>
+      </view>
+  </view>  
+</block>

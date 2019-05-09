@@ -1,0 +1,16 @@
+<scroll-view scroll-y="true" class="tm container">
+    <view class="m" wx:for="{{rooms}}"  bindtap="go" >
+        <text class="m-name">酒店: {{item.HOTEL_NAME}}</text>
+        <view class="m-data">
+            <view class="m-data-left">
+                <label class="m-data-top-left">房号:NO. <text class="m-green">{{item.ROOM_NO}}</text></label>
+                <label class="m-data-top-right">状态: <text class="m-green">{{status[item.ROOM_STATUS]}}</text></label>
+            </view>
+            <view class="m-data-right">
+                <label class="m-data-top-left">截止：<text class="m-green">{{item.EXP_TIME}}</text></label>
+                <button wx:if="{{item.ROOM_STATUS == 1}}" data-index="{{index}}" class='warn' data-room="{{item}}" bindtap='unlock'>开门</button>
+                <button wx:if="{{item.ROOM_STATUS == 1}}" data-index="{{index}}" class='primary' data-room="{{item}}" bindtap='completeCleaning'>清洁完成</button>
+            </view>
+        </view>
+    </view>
+</scroll-view>

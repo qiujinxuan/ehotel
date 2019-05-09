@@ -1,0 +1,29 @@
+
+ <view class='header'>
+
+ 
+  </view>
+  <view class="nav flex">
+    <block>
+      <navigator url="{{item.navigator}}" class="nav-item">
+        <button type="default" size="defaultSize"  bindtap="defaultTap" hover-class="hover">绑定锁具</button>
+      </navigator>
+      <navigator url="../admin/login" class="nav-item">
+        <button type="default" size="defaultSize"  bindtap="defaultTap" hover-class="hover">解除绑定</button>
+      </navigator>
+      <navigator url="{{item.navigator}}" class="nav-item">
+        <button type="default" size="defaultSize"   bindtap="defaultTap" hover-class="hover">直接开锁</button>
+      </navigator>
+      <navigator url="{{item.navigator}}" class="nav-item">
+        <button type="default" size="defaultSize"   bindtap="defaultTap" hover-class="hover">授权开锁</button>
+      </navigator>
+      <navigator url="{{item.navigator}}" class="nav-item">
+        <button type="default" size="defaultSize"   bindtap="defaultTap" hover-class="hover">缴纳押金</button>
+      </navigator>
+      <navigator url="{{item.navigator}}" class="nav-item">
+        <button type="default" size="defaultSize"   bindtap="defaultTap" hover-class="hover">缴纳押金</button>
+      </navigator>
+    </block>
+  </view>
+
+ 

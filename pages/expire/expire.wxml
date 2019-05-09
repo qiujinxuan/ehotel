@@ -1,0 +1,85 @@
+<view class="header jub_jub_center" >
+    <image class="w40h40 ml30" src="/image/my/info-circle@2x.png"/>
+    <view class="header_text" >
+        您的客房已到期，点击“续住”缴费后继续使用
+    </view>
+    <image class="w40h40 mr30" />
+</view>
+<view class="header_bg juc_colum">
+    <image class="header_bg_img" src="/image/my/my_bg.png">
+    </image>
+    <view class="header_content juc_colum_b" >
+        <view class="juc_colum_b mt-60">
+            <image class="w80h80" src="/image/my/daoqitixing@2x.png"/>
+             <view class="title_text" style='font-size: 48rpx'>
+                 客官，您的客房已到期~
+             </view>
+        </view>
+    </view>
+</view>
+<view class="middle">
+    <view class="contanier h458">
+        <view class="pt60 ft60 " >
+            {{ROOM_NO}}
+        </view>
+        <view class="ft28 color_99 pb70" >
+            房号
+        </view>
+        <view class="contanier_list jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/building.png"/>  
+                <view class="ft28 color_66" >
+                    酒店
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+                {{HOTEL_NAME}}
+            </view>
+        </view>
+        <view class="contanier_list no_border jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/history.png"/>  
+                <view class="ft28 color_66" >
+                    有效期
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+               {{END_TIME}}
+            </view>
+        </view>
+        <!-- 侧边栏目 -->
+        <view class="right_phone flex_align" hover-class="bottomact" bindtap='callService'>
+            <image class="phone mr10" src="/image/my/dianhua.png" />
+            <view class="ft28 color_w">
+                客服
+            </view>
+        </view>
+    </view>
+</view>
+    <view class="Enter juc_colum" >
+        <view class="flex_align mb30">
+            <view class="bottom_btn mr60 juc_colum_b bgblue" hover-class="bottomact" bindtap='checkOut'>
+                <view class="flex_align" >
+                    <image class="w40h40 mr15" src="/image/my/door.png" >
+                    </image>
+                    <view class="ft36 color_w" >
+                        新开
+                    </view>
+                </view>    
+            </view>
+            <view class="bottom_btn juc_colum_b bggreen" hover-class="bottomact" bindtap='renew'>
+                <view class="flex_align" >
+                    <image class="w40h40 mr15" src="/image/my/agin.png" >
+                        
+                    </image>
+                    <view class="ft36 color_w" >
+                        续住
+                    </view>
+                </view>
+                    
+            </view>
+         </view>
+         <view class=" bottom_info color_99" style='text-align:center'>
+            <text class="color_66" >提示：</text>续房时间从到期时间开始顺延
+        </view>
+    </view>

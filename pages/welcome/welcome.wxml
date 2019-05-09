@@ -1,0 +1,12 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='body'>
+  <view class='header'>
+
+    <view class='title'></view>
+  </view>
+  <image class='logo' src='../../images/logo.png'></image>
+  <view class='text'>
+    <view class='p'>欢迎使用朝月客房自助平台。根据国家法律法规，请按照流程，在本平台登记您的真实个人信息，我们将通过公安部的身份认证与您人脸识别核实信息，通过认证并支付后，方可用小程序按钮打开客房门锁。朝月智能科技，我们让科技更懂你。</view>
+  </view>
+  <view class='page-btn' bindtap='continueToReg'>确认继续</view>
+</view>

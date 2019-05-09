@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "/model/active.wxss"
+
 .pb0 {
   padding-bottom: 0 !important; }
 

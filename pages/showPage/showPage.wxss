@@ -1,0 +1,3 @@
+/* pages/showPage/showPage.wxss */
+page{ padding-top:120rpx;}
+.li{ background: #22cc60; margin-bottom: 30rpx; margin-left: 30rpx; width: 690rpx; line-height: 80rpx; border-radius: 12rpx; color: #fff; text-align: center; }

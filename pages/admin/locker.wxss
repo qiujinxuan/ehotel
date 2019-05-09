@@ -1,0 +1,24 @@
+.nav{
+    flex-wrap:wrap;
+    justify-content:center;
+   }
+   .nav-item{
+     margin: 30rpx 50rpx 10rpx;
+   }
+   .nav-item image{
+     width:80rpx;
+     height: 80rpx;
+     border-radius:50%;
+   }
+   .nav-item text{
+     font-size: 16rpx;
+     color:#000;
+     display: inline-block;
+     text-align: center;
+   }
+   .flex{
+    display: flex;
+  }
+  .hover{
+      color: #000
+  }

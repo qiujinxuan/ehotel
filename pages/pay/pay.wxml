@@ -1,0 +1,48 @@
+<!--pages/authentication/authentication.wxml-->
+<view class="header_bg juc_colum">
+   <view style='font-size:42rpx'> ¥77元</view>
+    <view class="header_content juc_colum_b" >
+        <image class="w144h144 mt-60" src="{{AVATAR}}" />
+    </view>
+</view>
+
+
+<view class="middle">
+    <view class="contanier h558" >
+        <view class="contanier_list jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/building.png"/>  
+                <view class="ft28 color_66" >
+                    酒店
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+                {{HOTEL_NAME}}
+            </view>
+        </view>
+        <view class="contanier_list jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/lock.png"/>  
+                <view class="ft28 color_66" >
+                    房号
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+                {{ROOM_NO}}
+            </view>
+        </view>
+        <view class="contanier_list no_border jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/history.png"/>  
+                <view class="ft28 color_66" >
+                    入住人
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+               {{CUST_NAME}}
+            </view>
+        </view>
+    </view>
+</view>
+
+<button class="bottom_btn " hover-class="bottomact" bindtap="confirmPayRoom">确认支付{{ROOM_PRICE}}元</button>

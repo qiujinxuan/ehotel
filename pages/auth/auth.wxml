@@ -1,0 +1,5 @@
+<image class="w_100" src="/image/index/yindao.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+<button hover-class="bottomact"  class="login" open-type="getUserInfo" bindgetuserinfo="redirecToIndex">微信用户快速登录</button>
+<view class="free-btn-bordernone">
+    Copyright @2019 长沙朝月科技
+</view> 

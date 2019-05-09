@@ -1,0 +1,10 @@
+<view class="header" >
+    <image class="w192h192" src="/image/index/icon_failure@2x.png" />
+</view>
+<view class="success_title">
+    支付失败
+</view>
+<view class="success_content">
+    不要着急，房小猪等你回来
+</view>
+<button hover-class="bottomact"  class="login" bindtap="redirectToIndex">返回首页</button>

@@ -1,0 +1,88 @@
+
+<view class="header_bg juc_colum">
+    <image class="header_bg_img" src="/image/my/my_bg.png">
+        
+    </image>
+    <view class="header_content juc_colum_b" >
+        <image class="w144h144 mt-60" src="{{AVATAR}}" />
+    </view>
+</view>
+<view class="middle">
+    <view class="contanier h558" >
+        <view class="pt60 ft60 " >
+            {{ROOM_NO}}
+        </view>
+        <view class="ft28 color_99 pb70" >
+            房号
+        </view>
+        <view class="contanier_list jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/building.png"/>  
+                <view class="ft28 color_66" >
+                    酒店
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+                {{HOTEL_NAME}}
+            </view>
+        </view>
+        <view class="contanier_list jub_jub_center" style='display:none'>
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/lock.png"/>  
+                <view class="ft28 color_66" >
+                    房间密码
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+                15207316789
+            </view>
+        </view>
+        <view class="contanier_list no_border jub_jub_center" >
+            <view class="flex_align" >
+                <image class="w36h36 mr15" src="/image/my/history.png"/>  
+                <view class="ft28 color_66" >
+                    有效期
+                </view>
+            </view>
+            <view class="ft28 color_33" >
+               {{END_TIME}}
+            </view>
+        </view>
+        <!-- 侧边栏目 -->
+        <view class="right_phone flex_align" hover-class="bottomact" bindtap='callService'>
+            <image class="phone mr10" src="/image/my/dianhua.png" />
+            <view class="ft28 color_w">
+                客服
+            </view>
+        </view>
+    </view>
+</view>
+    <view class="pt40  juc_colum">
+        <view class="flex_align pb60" >
+             <view hover-class='bottomact' bindtap='checkout'>
+                <view class="w88h88 bgred mb15 juc_colum_b bg_left">
+                    <image class="w48h48" src="/image/my/door2.png" />   
+                </view>
+                <view class="ft28 color_33 w_88">退房</view> 
+             </view>
+           
+            <view class="w204h204 juc_colum_b bg_center" hover-class='bottomact' bindtap='unlock'>
+                <view class=" juc_colum_b">
+                    <image class="w48h48 mb10" src="/image/my/key.png" />
+                    <view class="ft32 color_w">
+                        点击开锁
+                    </view>
+                </view>
+            </view>
+            <view hover-class='bottomact'  bindtap='renew'>
+                 <view class="w88h88 bgblue mb15 juc_colum_b bg_right">
+                   <image class="w48h48" src="/image/my/agin.png" />   
+                 </view>
+                 <view class="ft28 color_33 w_88">续住</view> 
+             </view>
+        </view>
+        <view class=" bottom_info color_99" style='text-align:center'>
+            <text class="color_66" >提示：</text>点击开锁，听到滴滴声后，打开门锁！
+        </view>
+    </view>
+    

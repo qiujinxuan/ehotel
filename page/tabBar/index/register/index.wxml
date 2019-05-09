@@ -1,5 +1,0 @@
-<image class="w_100" src="/image/index/yindao.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
-<button hover-class="bottomact"  class="login" bindtap="userInfo">微信用户快速登录</button>
-<navigator class="otherLogin" target="" url="/page/tabBar/index/register/other" hover-class="navigator-hover" open-type="navigateTo">
-    手机号注册/登录
-</navigator>

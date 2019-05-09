@@ -1,38 +1,50 @@
 //app.js
-import util from 'utils/util.js'; //引用公共函数类库
-
-import common from 'utils/common.js';
-import config from 'utils/config.js';
+var aes = require('./utils/aes.js')
 App({
-    data:{
-      systeminfo:{},
-    },
-  /**
-   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
-   */
+  globalData: {
+    userInfo: null,
+    location: null,
+    hotelID: "",
+    hotelName: "",
+    roomNum: "",
+    openid: "",
+    ROOM_ID: "",
+    HOTEL_ID: "",
+    RETURN_HOME: 0,
+    ROOM_PRICE: "",
+    ROOM_DATA: null,
+    HOTEL_DATA: null,
+    CUST_DATA: null,
+    PAYMENT_DATA: null,
+    POSITION: null,
+    systeminfo: {}
+  },
+
   onLaunch: function () {
-    this.data.systeminfo=wx.getSystemInfoSync()
-   
-  },
-
-  /**
-   * 当小程序启动，或从后台进入前台显示，会触发 onShow
-   */
-  onShow: function (options) {
+    this.globalData.systeminfo = wx.getSystemInfoSync()
+    // 展示本地存储能力
+    var logs = wx.getStorageSync('logs') || []
+    logs.unshift(Date.now())
+    wx.setStorageSync('logs', logs)
+    var app = this;
+    var signature = app.getSign();
     
   },
 
-  /**
-   * 当小程序从前台进入后台，会触发 onHide
-   */
-  onHide: function () {
+  onready: function(){
     
   },
 
-  /**
-   * 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
-   */
-  onError: function (msg) {
-    
+  encrypt: function(s){
+    return aes.encrypt(s)
+  },
+
+  getSign: function(){
+    var timestamp = new Date().getTime();
+    return aes.encrypt(timestamp);
+  },
+
+  decrypt: function(s){
+    return aes.decrypt(s)
   }
 })

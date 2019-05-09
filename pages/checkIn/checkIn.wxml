@@ -1,0 +1,91 @@
+<view class="header_blanck"></view>
+<view class="header flex_align" >
+    <view class="header_item  {{header_type=='hour'?'act':''}}" bindtap='chooseRoomType' data-index='0'>
+        钟点房
+    </view>
+    <view class="header_item {{header_type=='day'?'act':''}}" bindtap='chooseRoomType' data-index='1'>
+       日房
+    </view>
+</view>
+<view class="select_plate jub_jub_center" wx:if="{{header_type=='day'}}">
+    <view class="select_item juc_colum_b {{select_bottom=='1'?'act_bg':''}}" bindtap='chooseDay' data-time="1">
+        <view class="day mb10  {{select_bottom=='1'?'act_blanck':''}}">
+            1天
+        </view>
+        <view class="money">
+            <text class=" {{select_bottom=='1'?'act_blanck':''}}">￥</text>
+            <text class="ft60 {{select_bottom=='1'?'act_blanck':''}}" >{{PRICE_DAY_1}}</text>
+        </view>
+    </view>
+    <view class="select_item juc_colum_b {{select_bottom=='2'?'act_bg':''}}"  bindtap='chooseDay' data-time="2">
+        <view class="day mb10 {{select_bottom=='2'?'act_blanck':''}}">
+            2天
+        </view>
+        <view class="money">
+            <text class="{{select_bottom=='2'?'act_blanck':''}}">￥</text>
+            <text class="ft60 {{select_bottom=='2'?'act_blanck':''}}" >{{PRICE_DAY_2}}</text>
+        </view>
+    </view>
+    <view class="select_item juc_colum_b {{select_bottom=='3'?'act_bg':''}}"  bindtap='chooseDay' data-time="3">
+        <view class="day mb10 {{select_bottom=='3'?'act_blanck':''}}">
+            3天
+        </view>
+        <view class="money">
+            <text class=" {{select_bottom=='3'?'act_blanck':''}}">￥</text>
+            <text class="ft60 {{select_bottom=='3'?'act_blanck':''}}" >{{PRICE_DAY_3}}</text>
+        </view>
+    </view>
+</view>
+<view class="select_plate jub_jub_center" wx:if="{{header_type=='hour'}}">
+    <view class="select_item juc_colum_b {{select_bottom=='3'?'act_bg':''}}"  bindtap='chooseHour' data-index="1"  data-time="3">
+        <view class="day mb10 {{select_bottom=='3'?'act_blanck':''}} ">
+            3小时
+        </view>
+        <view class="money">
+            <text class=" {{select_bottom=='3'?'act_blanck':''}}">￥</text>
+            <text class="ft60 {{select_bottom=='3'?'act_blanck':''}}" >{{PRICE_HOUR_3}}</text>
+        </view>
+    </view>
+    <view class="select_item juc_colum_b {{select_bottom=='4'?'act_bg':''}}"  bindtap='chooseHour' data-index="2"  data-time="4">
+        <view class="day mb10 {{select_bottom=='4'?'act_blanck':''}}">
+            4小时
+        </view>
+        <view class="money">
+            <text class="{{select_bottom=='4'?'act_blanck':''}}">￥</text>
+            <text class="ft60 {{select_bottom=='4'?'act_blanck':''}}" >{{PRICE_HOUR_4}}</text>
+        </view>
+    </view>
+    <view class="select_item juc_colum_b {{select_bottom=='6'?'act_bg':''}}"  bindtap='chooseHour' data-index="3"  data-time="6">
+        <view class="day mb10 {{select_bottom=='6'?'act_blanck':''}}">
+            6小时
+        </view>
+        <view class="money">
+            <text class="{{select_bottom=='6'?'act_blanck':''}}">￥</text>
+            <text class="ft60 {{select_bottom=='6'?'act_blanck':''}}" >{{PRICE_HOUR_6}}</text>
+        </view>
+    </view>
+</view>
+<view class="select_info" >
+    <view class="flex_align mb20" >
+        <image class="w28h28 mr20" src="/image/my/icon_calculator@2x.png" > 
+        </image>
+        <view class="color_33 ft28" wx:if="{{header_type=='day'}}">
+            日房计算规则
+        </view>
+        <view class="color_33 ft28" wx:if="{{header_type=='hour'}}">
+            钟点房计算规则
+        </view>
+    </view>
+    <view class="pl48 ft28 color_99"  wx:if="{{header_type=='day'}}" >
+    <text decode="{{true}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择日租房套餐后，确定付款即可入住，相应时间段内可不限次数扫码开锁。在0:00-3:00入住的日租房为付款开始至当日上午12点为一天，在8:00-24:00入住的日租房为付款开始至次日上午12点为一天。其它时间段请选择钟点房，本系统不支持退款，不能换房或修改，如有其它问题，请联系客服。
+    </text>
+    </view>
+    <view class="pl48 ft28 color_99"  wx:if="{{header_type=='hour'}}" >
+    <text decode="{{true}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择钟点房套餐后，确定付款即可入住，相应时间段内可不限次数扫码开锁。3小时、4小时的钟点房营业时间为：5:00-17:00,6小时的钟点房营业时间为：3:00-15:00，其它时间段请选择日租房。本系统不支持退款，不能换房或修改，如有其它问题，请联系客服。
+         </text>
+    </view>
+   
+</view>
+<button class="bottom_btn " hover-class="bottomact" bindtap="submitCheckIn">立即支付{{ROOM_PRICE}}元</button>

@@ -1,0 +1,11 @@
+<!--pages/showPage/showPage.wxml-->
+<view class='showpage'>
+  <view class='li' bindtap='gourlnt' data-url="authentication">认证</view>
+  <view class='li' bindtap='gourlnt' data-url="checkIn">入住方式</view>
+  <view class='li' bindtap='gourlnt' data-url="expire">到期处理</view>
+  <view class='li' bindtap='gourlnt' data-url="index">首页</view>
+  <view class='li' bindtap='gourlnt' data-url="my">我的</view>
+  <view class='li' bindtap='gourlnt' data-url="welcome">欢迎</view>
+  <view class='li' bindtap='gourlnt' data-url="reg">注册</view>
+  <view class='li' bindtap='gourlnt' data-url="pay">支付</view>
+</view>
