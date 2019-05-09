@@ -16,8 +16,17 @@
     </view>
 </view>
 <view class="middle_img jub_jub_center">
+  <view>
     <image class="w128h128" src="/image/index/img_02@2x.png" />
-    <image class="w128h128" src="/image/index/img_03@2x.png" />  
-    <image class="w128h128" src="/image/index/img_04@2x.png" />  
+    <view class="bottom_font">正对手机</view>
+  </view>
+  <view>
+    <image class="w128h128" src="/image/index/img_03@2x.png" />
+    <view  class="bottom_font">光线充足</view>
+  </view>
+  <view>
+    <image class="w128h128" src="/image/index/img_04@2x.png" />
+    <view  class="bottom_font">放慢动作</view>
+    </view>
 </view>
 <button hover-class="bottomact"  class="login" bindtap="faceSuccess">开始检测</button>
