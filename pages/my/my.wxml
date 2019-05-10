@@ -66,11 +66,11 @@
                 <view class="ft28 color_33 w_88">退房</view> 
              </view>
            
-            <view class="w204h204 juc_colum_b bg_center" hover-class='bottomact' bindtap='unlock'>
+            <view class="w204h204 juc_colum_b bg_centent" hover-class='bottomact' bindtap='unlock'>
                 <view class=" juc_colum_b">
                     <image class="w48h48 mb10" src="/image/my/key.png" />
                     <view class="ft32 color_w">
-                        点击开锁
+                        开锁
                     </view>
                 </view>
             </view>
